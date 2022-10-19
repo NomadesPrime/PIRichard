@@ -1,10 +1,11 @@
 
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { Home } from "../screens/home";
 import { Sobre } from "../screens/sobre";
 
 
-const Stack = createNativeStackNavigator();
+//const Stack = createNativeStackNavigator();
+const Stack = createMaterialBottomTabNavigator();
 
 
 export const RootNavigation = () => {
@@ -23,11 +24,11 @@ export const RootNavigation = () => {
                 component={Sobre}
             />
             <Stack.Screen
-                name="Registro"
+                name="Cadastro"
                 component={Sobre}
             />
             <Stack.Screen
-                name="Login"
+                name="Entrar"
                 component={Sobre}
             />
         </Stack.Navigator>

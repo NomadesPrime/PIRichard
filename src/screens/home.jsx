@@ -4,16 +4,20 @@ export const Home = ({ navigation }) => (
     <View>
         <Text>Aqui é a Home</Text>
         <Button
-            title="Vamos para Sobre?"
+            title="Sobre"
             onPress={() => navigation.navigate("Sobre")}
         />
         <Button
-            title="Vamos para Contato?"
+            title="Contato"
             onPress={() => navigation.navigate("Contato")}
         />
         <Button
-            title="Vamos para Registro?"
-            onPress={() => navigation.navigate("Registro")}
+            title="Cadastro"
+            onPress={() => navigation.navigate("Cadastro")}
+        />
+        <Button
+            title="Entrar"
+            onPress={() => navigation.navigate("Entrar")}
         />
     </View>
 )
