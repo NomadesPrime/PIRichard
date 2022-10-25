@@ -20,7 +20,7 @@ export const RootNavigation = () => {
                 component={Home}
                 options={{
                     tabBarIcon: ({ color }) => (
-                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                      <MaterialCommunityIcons name="home" color={color} size={26} />
                     ),
                   }}
                 />
@@ -31,7 +31,7 @@ export const RootNavigation = () => {
                 component={Sobre}
                 options={{
                     tabBarIcon: ({ color }) => (
-                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                      <MaterialCommunityIcons name="settings" color={color} size={26} />
                     ),
                   }}
                 />
@@ -50,7 +50,7 @@ export const RootNavigation = () => {
                 component={Sobre}
                 options={{
                     tabBarIcon: ({ color }) => (
-                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                      <MaterialCommunityIcons name="account" color={color} size={26} />
                     ),
                   }}
                 />
@@ -59,7 +59,7 @@ export const RootNavigation = () => {
                 component={Sobre}
                 options={{
                     tabBarIcon: ({ color }) => (
-                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                      <MaterialCommunityIcons name="login" color={color} size={26} />
                     ),
                   }}
                 />
