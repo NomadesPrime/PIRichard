@@ -3,6 +3,7 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import { Home } from "../screens/home";
 import { Sobre } from "../screens/sobre";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { login } from "../screens/login";
 
 //const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -56,7 +57,7 @@ export const RootNavigation = () => {
                 />
             <Tab.Screen
                 name="Entrar"
-                component={Sobre}
+                component={login}
                 options={{
                     tabBarIcon: ({ color }) => (
                       <MaterialCommunityIcons name="login" color={color} size={26} />
