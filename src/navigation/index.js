@@ -2,35 +2,67 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { Home } from "../screens/home";
 import { Sobre } from "../screens/sobre";
-
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 //const Stack = createNativeStackNavigator();
-const Stack = createMaterialBottomTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 
 export const RootNavigation = () => {
     return (
-        <Stack.Navigator>
-            <Stack.Screen
+        <Tab.Navigator   
+        activeColor="#3e2465"
+        inactiveColor="#3e2465"
+        barStyle={{ backgroundColor: '#F0F8FF' }}
+        >
+            <Tab.Screen
                 name="Home"
                 component={Home}
-            />
-            <Stack.Screen
+                options={{
+                    tabBarIcon: ({ color }) => (
+                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                    ),
+                  }}
+                />
+                
+
+            <Tab.Screen
                 name="Sobre"
                 component={Sobre}
-            />
-            <Stack.Screen
+                options={{
+                    tabBarIcon: ({ color }) => (
+                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                    ),
+                  }}
+                />
+              
+            <Tab.Screen
                 name="Contato"
                 component={Sobre}
-            />
-            <Stack.Screen
+                options={{
+                    tabBarIcon: ({ color }) => (
+                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                    ),
+                  }}
+                />
+            <Tab.Screen
                 name="Cadastro"
                 component={Sobre}
-            />
-            <Stack.Screen
+                options={{
+                    tabBarIcon: ({ color }) => (
+                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                    ),
+                  }}
+                />
+            <Tab.Screen
                 name="Entrar"
                 component={Sobre}
-            />
-        </Stack.Navigator>
+                options={{
+                    tabBarIcon: ({ color }) => (
+                      <MaterialCommunityIcons name="bell" color={color} size={26} />
+                    ),
+                  }}
+                />
+        </Tab.Navigator>
     )
 }
