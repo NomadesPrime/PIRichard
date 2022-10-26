@@ -1,18 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import { styles } from "../lib/style";
 
 export const login = () => {
   return (
     <View style={styles.container}>
-      <Text>Top demais</Text>
+      <Text style={{...styles.h1,...styles.vermelho}}>Top demais</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
